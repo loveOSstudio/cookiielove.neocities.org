@@ -1,0 +1,97 @@
+body {
+    background-color: #0e0e0e;
+    color: #b1b1b1;
+    image-rendering: pixelated;
+}
+
+#room-container {
+    position: fixed;
+    align-content: center;
+    /*border: 1px solid white;*/
+    width: 84vw;
+    height: 62vh;
+    left: 8vw;
+    top: 10vh;
+}
+
+#room-container img {
+    margin: 1.5vw;
+}
+
+#smol-cookiie-container {
+    position: fixed;
+    /*border: 1px solid white;*/
+    width: 60vw;
+    height: 24vh;
+    left: 20vw;
+    bottom: 2vh;
+}
+
+#lo-container {
+    position: absolute;
+    /*border: 1px solid white;*/
+    width: 68%;
+    height: 90%;
+    right: 1.8%;
+    color: #0e0e0e00;
+    font-family:'Courier New', Courier, monospace;
+    font-size:medium;
+    font-weight: 700;
+}
+
+#cl-container {
+    position: absolute;
+    /*border: 1px solid white;*/
+    width: 68%;
+    height: 90%;
+    right: 1.8%;
+    color: #0e0e0e00;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+#tg-container {
+    position: absolute;
+    /*border: 1px solid white;*/
+    width: 70%;
+    height: 80%;
+    right: -2%;
+    bottom: 8%;
+    color: #0e0e0e00;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+/*----------------------*/
+
+.room-image {
+    cursor: pointer;
+}
+
+/*----------------------*/
+
+.idle { 
+	animation-name: idle;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes idle {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 4px) scale(101%, 99%); }
+	100% { transform: translate(0, -0px); } 
+}
+
+.hover { 
+	animation-name: hover;
+	animation-duration: 0.35s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes hover {
+	0% { transform: scale(100%, 100%); }
+	50% { transform: scale(103%, 103%); }
+	100% { transform: scale(100%, 100%); }
+}
