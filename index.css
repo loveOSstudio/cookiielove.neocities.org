@@ -4,6 +4,10 @@ body {
     image-rendering: pixelated;
 }
 
+a {
+    text-decoration: none;
+}
+
 #room-container {
     position: fixed;
     align-content: center;
